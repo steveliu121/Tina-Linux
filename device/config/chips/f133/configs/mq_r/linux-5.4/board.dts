@@ -983,8 +983,8 @@ tvd_row*tvd_column is the total tvd channel number to be used in multichannel mo
                 ctp_revert_x_flag = <0x0>;
                 ctp_revert_y_flag = <0x0>;
                 ctp_exchange_x_y_flag = <0x0>;
-                ctp_int_port = <&pio PE 10 GPIO_ACTIVE_HIGH>;
-                ctp_wakeup = <&pio PE 11 GPIO_ACTIVE_HIGH>;
+                ctp_int_port = <&pio PB 3 GPIO_ACTIVE_HIGH>;
+                ctp_wakeup = <&pio PB 2 GPIO_ACTIVE_HIGH>;
                 /*ctp-supply = <&reg_aldo2>;*/
                 /*ctp_power_ldo = <&reg_aldo2>;*/
                 /*ctp_power_ldo_vol = <3300>;*/
