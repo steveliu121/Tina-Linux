@@ -4,7 +4,7 @@ echo "------run rc.modules file-----"
 # if [ x${boot_partition} == xboot ];then 
 	/sbin/insmod /lib/modules/5.4.61/usb-storage.ko
 	/sbin/insmod /lib/modules/5.4.61/sunxi_gpadc.ko
-#	/sbin/insmod /lib/modules/5.4.61/gt9xxnew_ts.ko
+	/sbin/insmod /lib/modules/5.4.61/gt9xxnew_ts.ko
 	echo 0x07090160 0x083F10F7 > /sys/class/sunxi_dump/write
 #	/sbin/insmod /lib/modules/5.4.61/8723ds.ko
 	/sbin/insmod /lib/modules/5.4.61/8189fs.ko
