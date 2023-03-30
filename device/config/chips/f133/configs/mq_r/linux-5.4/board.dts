@@ -186,6 +186,18 @@
 		bias-pull-up;
 	};
 
+        uart5_pins_a: uart5_pins@0 {  /* For mangopi board */
+                pins = "PB4", "PB5";
+                function = "uart5";
+                drive-strength = <10>;
+                bias-pull-up;
+        };
+
+        uart5_pins_b: uart5_pins@1 {  /* For mangopi board */
+                pins = "PB2", "PB3";
+                function = "gpio_in";
+        };
+
 	twi0_pins_a: twi0@0 {
 		pins = "PB10", "PB11";	/*sck sda*/
 		function = "twi0";
@@ -455,7 +467,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&uart0_pins_a>;
 	pinctrl-1 = <&uart0_pins_b>;
-	status = "okay";
+	status = "disabled";
 };
 
 &uart1 {
@@ -478,6 +490,13 @@
 	pinctrl-0 = <&uart3_pins_a>;
 	pinctrl-1 = <&uart3_pins_a>;
 	status = "disabled";
+};
+
+&uart5 {
+	pinctrl-names = "default", "sleep";
+	pinctrl-0 = <&uart5_pins_a>;
+	pinctrl-1 = <&uart5_pins_b>;
+	status = "okay";
 };
 
 &soc {

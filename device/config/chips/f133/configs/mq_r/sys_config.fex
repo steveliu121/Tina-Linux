@@ -194,14 +194,17 @@ twi_sda  = port:PG15<3><1><default><default>
 ;uart_debug_rx  |Boot串口接收的GPIO配置     |
 ;----------------------------------------------------------------------------------
 [uart_para]
-uart_debug_port = 0
-uart_debug_tx   = port:PE02<6><1><default><default>
-uart_debug_rx   = port:PE03<6><1><default><default>
+;uart_debug_port = 0
+;uart_debug_tx   = port:PE02<6><1><default><default>
+;uart_debug_rx   = port:PE03<6><1><default><default>
 
 ;uart_debug_port = 3
 ;uart_debug_tx   = port:PB06<7><1><default><default>
 ;uart_debug_rx   = port:PB07<7><1><default><default>
 
+uart_debug_port = 5
+uart_debug_tx   = port:PB04<7><1><default><default>
+uart_debug_rx   = port:PB05<7><1><default><default>
 
 ;----------------------------------------------------------------------------------
 ;dram_region_mbytes :设置drm大小以bytes为单位
