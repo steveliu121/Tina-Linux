@@ -541,7 +541,7 @@
 		power_en;
 		pinctrl-0 = <&wlan_pins_a>;
 		pinctrl-names = "default";
-		status        = "okay";
+		status        = "disabled";
 
 		wlan: wlan@0 {
 			compatible    = "allwinner,sunxi-wlan";
@@ -654,7 +654,7 @@
 	ignore-pm-notify;
 	max-frequency = <150000000>;
 	ctl-spec-caps = <0x8>;
-	status = "okay";
+	status = "disabled";
 };
 
 
