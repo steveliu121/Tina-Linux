@@ -1,12 +1,12 @@
 [submodule "package"]
 	path = package
-	url = https://github.com/mangopi-sbc/tina-package
+	url = git@github.com:steveliu121/tina-package.git
 [submodule "lichee/brandy-2.0/spl-pub"]
 	path = lichee/brandy-2.0/spl-pub
-	url = https://github.com/mangopi-sbc/tina-spl-pub
+	url = git@github.com:steveliu121/tina-spl-pub.git
 [submodule "lichee/brandy-2.0/u-boot-2018"]
 	path = lichee/brandy-2.0/u-boot-2018
-	url = https://github.com/mangopi-sbc/tina-u-boot-2018
+	url = git@github.com:steveliu121/tina-u-boot-2018.git
 [submodule "lichee/linux-5.4"]
 	path = lichee/linux-5.4
-	url = https://github.com/mangopi-sbc/tina-linux-5.4
+	url = git@github.com:steveliu121/tina-linux-5.4.git
