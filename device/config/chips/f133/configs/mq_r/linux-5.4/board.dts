@@ -1026,6 +1026,10 @@ tvd_row*tvd_column is the total tvd channel number to be used in multichannel mo
 	pinctrl-names = "default", "sleep";
 	/*phy-rst = <&pio PE 16 GPIO_ACTIVE_HIGH>;*/
 	status = "okay";
+	fixed-link {
+		speed = <100>;
+		full-duplex;
+	};
 };
 
 &spi0 {
@@ -1064,7 +1068,7 @@ tvd_row*tvd_column is the total tvd channel number to be used in multichannel mo
 	pinctrl-1 = <&spi1_pins_c>;
 	pinctrl-names = "default", "sleep";
 	spi_slave_mode = <0>;
-	status = "disabled";
+	status = "okay";
 
 	spi_board1@0 {
 		device_type = "spi_board1";
@@ -1074,6 +1078,14 @@ tvd_row*tvd_column is the total tvd channel number to be used in multichannel mo
 		spi-rx-bus-width = <0x4>;
 		spi-tx-bus-width = <0x4>;
 		status = "disabled";
+	};
+	switch@0 {
+		compatible = "jlsemi,jl61xx";
+		spi-max-frequency = <0x5f5e100>;
+		reg = <0x0>;
+		spi-rx-bus-width = <0x4>;
+		spi-tx-bus-width = <0x4>;
+		status = "okay";
 	};
 };
 
